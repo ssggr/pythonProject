@@ -1,0 +1,67 @@
+<MyLayout>
+	#do_default_tab: False
+
+	#size_hint: .5, .5
+	#pos_hint: {'center_x': .5, 'center_y': .5}
+
+        # ft_top, left_mid, left_bottom, top_left,
+        # top_mid, top_right, right_top, right_mid,
+        # right_bottom, bottom_left, bottom_mid,
+        # bottom_right.
+
+	tab_pos: 'left_top'
+
+
+    TabbedPanelItem:
+	    text: "Константин"
+	    background_color: "#30ff00"
+
+        FloatLayout:
+			Label:
+			    text: "[b][i][u][size=28]----Гордиенко----\nКонстантин Андреевич[/size][/u][/i][/b]\n[size=17][font=Georgia]Родился в мае 1853 года в селе Таврия (Троицкое)\nБердянского уезда Софийской волости\nТаврической губернии Российской империи[/font][/size]"
+                markup: True
+                size_hint_x: 1.5
+                size_hint_y: 1.8
+
+		    Image:
+			    source: "г 0001 021.jpg"
+                pos_hint: {"x":-0.1, "top":1}
+			    size_hint: .6 , .6
+
+	TabbedPanelItem:
+	    text: "Иван"
+	    background_color: "#30ff00"
+
+        FloatLayout:
+			Label:
+			    text: "[b][i][u][size=29]----Гордиенко----\nИван Константинович[/size][/u][/i][/b]\n[size=17][font=Georgia]Родился в 1897 году на хуторе Калаус,\nБлагодарненской волости.[/size][/font]"
+                markup: True
+                size_hint_x: 1.4
+                size_hint_y: 1.8
+		    Image:
+			    source: "г 0002 5.jpg"
+			    #size_hint_x: 1.7
+                #size_hint_y: 10
+
+			    pos_hint: {"x":-0.1, "top":1}
+			    #size: , 0
+			    size_hint: .6 , .6
+			   # pos_hint: {'center_x': .5}
+
+
+	TabbedPanelItem:
+	    text: "Дмитрий"
+	    background_color: "#30ff00"
+	    FloatLayout:
+			Label:
+			    text: "[b][i][u][size=29]----Гордиенко----\nДмитрий Иванович[/size][/u][/i][/b]\n[size=17][font=Georgia]Pодился 3 ноября 1923 год на хуторе Калаус.[/size][/font]"
+			    markup: True
+
+                size_hint_x: 1.4
+                size_hint_y: 1.8
+		    Image:
+			    source: "г 0005 5.jpg"
+			    pos_hint: {"x":-0.1, "top":1}
+			    size_hint: .6 , .6
+
+
